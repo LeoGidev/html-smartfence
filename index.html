@@ -112,17 +112,17 @@
     </head>
     <body>
         <h1>SmartFence</h1>
-        <div id="sistema">
+        <div id='sistema'>
             <div class='titulo'>
                 <h2>Configuraciones de sistema</h2>
             </div>
             <div class='formulario'>
                 <div><h3>Conectar a wifi</h3></div>
                 <form id='frm' action='/' method='POST'>
-                    <label for="ssid">SSID</label>
-                    <input id="ssid" type='text' name='ssid' placeholder="SSID">
-                    <label for="pss">Password</label>
-                    <input id="pss" type='text' name='password' placeholder="Contraseña">
+                    <label for='ssid'>SSID</label>
+                    <input id='ssid' type='text' name='ssid' placeholder='SSID'>
+                    <label for='pss'>Password</label>
+                    <input id='pss' type='text' name='password' placeholder='Contraseña'>
                     <button class='btn' type='submit'>Enviar</button>
                 </form>
                 <div>
@@ -134,14 +134,14 @@
             </div>
 
         
-            <div class="formulario">
+            <div class='formulario'>
                     <div><h3>Datos Telegram</h3></div>
                 
                 <form id='frmT' action='/telegram' method='POST'>
-                    <label for="token">TOKEN</label>
-                    <input id="token" type='text' name='token' placeholder="TOKEN">
-                    <label for="idchat">ID del chat</label>
-                    <input id='idchat' type='text' name='IDchat' placeholder="ID del chat">
+                    <label for='token'>TOKEN</label>
+                    <input id='token' type='text' name='token' placeholder='TOKEN'>
+                    <label for='idchat'>ID del chat</label>
+                    <input id='idchat' type='text' name='IDchat' placeholder='ID del chat'>
                     <button class='btn' type='submit'>Enviar</button>
                 </form>
                 <div>
@@ -149,6 +149,16 @@
                         <tr><td>ID del chat actual:</td><td>dato</td></tr>
                     </table>
                 </div>
+            </div>
+
+            <div class='formulario'>
+                <div><h3>Salidas</h3></div>
+                <form action='/salidas' method='POST'>
+                    <input type='text' name='nsalA' placeholder='nombre de salida A'>
+                    <input type='text' name='nsalB' placeholder=' nombre de salida B'>
+                    <input type="text" name="'nsalC" placeholder="nombre de salida C">
+                    <input type="text" name="'nsalD" placeholder="nombre de salida D">
+                </form>
             </div>
         </div>
     </body>
