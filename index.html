@@ -125,7 +125,7 @@
             </div>
             <div class='formulario'>
                 <div><h3>Conectar a wifi</h3></div>
-                <form id='frm' action='/' method='POST'>
+                <form id='frm' action='/wifi' method='POST'>
                     <label for='ssid'>SSID</label>
                     <input id='ssid' type='text' name='ssid' placeholder='SSID'>
                     <label for='pss'>Password</label>
@@ -246,24 +246,26 @@
                             <option value='LOW'>DOWN</option>
                         </select>
                     </div>
+                    <button class='btn' type='submit'>Enviar</button>
                 </form>
             </div>
 
             <div class='formulario'>
                 <div><h3>Entradas</h3></div>
+                <div><span>Enviar telegram en caso de cambio de estado:</span></div>
             
             <form id='frmT' action='/Entradas' method='POST'>
-                <label for='TA'>Entrada GSM</label>
-                <input id='TA' type='checkbox' name='TelA'>
-                <label for='TB'>ID del chat</label>
-                <input id='TB' type='checkbox' name='TelB'>
+                <label for='TA'>Entrada PGM</label>
+                <input id='TA' type='checkbox' name='TelPGM' checked/>
+                <label for='TB'>Entrada 1</label>
+                <input id='TB' type='checkbox' name='Tel1' checked/>
+                <label for='TC'>Entrada 2</label>
+                <input id='TC' type='checkbox' name='Tel2' checked/>
+                <label for='TD'>Entrada 3</label>
+                <input id='TD' type='checkbox' name='Tel3' checked/>
                 <button class='btn' type='submit'>Enviar</button>
             </form>
-            <div>
-                <table><tr><td>Token actual:</td><td>dato</td></tr>
-                    <tr><td>ID del chat actual:</td><td>dato</td></tr>
-                </table>
-            </div>
+            
         </div>
         </div>
     </body>
