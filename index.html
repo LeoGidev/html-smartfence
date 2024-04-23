@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>SmartFence</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+        <style>
+            body { 
+                overflow-x: hidden;
+                background-color: rgb(220, 237, 251); 
+            }
+            html { 
+                overflow-x: hidden; 
+            }
+            h1 { 
+                padding: 10px; 
+                background-color: #3b5998; 
+                color: white; 
+                font-size: 0.9rem;  
+            }
+            #sistema{
+                padding-top: 8px;
+                margin: 8px;
+                text-align: center;
+                background-color: rgb(255, 255, 255);
+                border-radius: 10px;
+            }
+            .formulario {
+                border: 3px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50vh;
+                flex-direction: column;
+            }
+            form {
+                
+                width: 90vw;
+                border: 3px solid red;
+                display: block;
+                text-align: center; 
+            }
+            input, button{
+                width: 50vw;
+                display: block;
+                margin: 10px auto;
+            }
+            @media only screen and (max-width: 600px){
+            input, button {
+                width: 84vw;
+                display: block;
+                margin: 10px auto; 
+            }
+        }
+        table, tr{
+            padding: 4px;
+            margin: 8px;
+            background-color: rgb(215, 220, 250);
+            border-radius: 3px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>SmartFence</h1>
+        <div id="sistema">
+        <div class='titulo'>
+            <h2>Configuraciones de sistema</h2>
+        </div>
+        <div class='formulario'>
+            <div><h3>Conectar a wifi</h3></div>
+            <form id='frm' action='/' method='POST'>
+                <label for="ssid">SSID</label>
+                <input id="ssid" type='text' name='ssid' placeholder="SSID">
+                <label for="pss">Password</label>
+                <input type='text' name='password' placeholder="Contraseña">
+                <button class='btn' type='submit'>Enviar</button>
+            </form>
+            <div>
+                <table><tr><td>SSID actual:</td><td>dato</td></tr>
+                    <tr><td>Pass actual:</td><td>dato</td></tr>
+                    <tr><td>Señal del wifi:</td><td>dato</td></tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
+
+
+
