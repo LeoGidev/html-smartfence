@@ -87,6 +87,13 @@
                 margin: 10px auto; 
             }
         }
+        .in{
+            box-shadow: 0px 2px 4px rgb(71, 71, 71);
+            padding: 20px;
+            margin-left: 6vw;
+            margin-right: 6vw;
+            margin-bottom: 20px;
+        }
             .table{
                 table-layout:auto;
              }
@@ -153,31 +160,71 @@
 
             <div class='formulario'>
                 <div><h3>Salidas</h3></div>
-                <form action='/salidas' method='POST'>
-                    <div id='A'>
-                    <input type='text' name='nsalA' placeholder='nombre de salida A'>
-                    <span>Poner en:</span>
-                    <select name='estadoA' id='state'>
-                        <option value='ON'>ON</option>
-                        <option value='OFF'>OFF</option>
-                    </select>
-                    <span>SI</span>
-                    <select name='siA' id='IFA'>
-                        <option value='PGM'>PGM</option>
-                        <option value='IN1'>Entrada1</option>
-                        <option value='INT2'>Entrada2</option>
-                        <option value='INT3'>Entrada3</option>
-                        <option value='Never'>Nunca</option>
-                    </select>
-                    <span>Se ecneuntra en estado:</span>
-                    <select name='StateeIN' id='STin'>
-                        <option value='High'>UP</option>
-                        <option value='LOW'>DOWN</option>
-                    </select>
+                <form  action='/salidas' method='POST'>
+                    <div class='in' id='A'>
+                        <input  type='text' name='nsalA' placeholder='nombre de salida A'>
+                        <span>Poner en:</span>
+                        <select name='estadoA' id='stateA'>
+                            <option value='ON'>ON</option>
+                            <option value='OFF'>OFF</option>
+                        </select>
+                        <span>SI</span>
+                        <select name='siA' id='IFA'>
+                            <option value='PGM'>PGM</option>
+                            <option value='IN1'>Entrada1</option>
+                            <option value='INT2'>Entrada2</option>
+                            <option value='INT3'>Entrada3</option>
+                            <option value='Never'>Nunca</option>
+                        </select>
+                        <span>Se encuentra en estado:</span>
+                        <select name='StateeIN' id='STin'>
+                            <option value='High'>UP</option>
+                            <option value='LOW'>DOWN</option>
+                        </select>
                     </div>
-                    <input type='text' name='nsalB' placeholder=' nombre de salida B'>
-                    <input type='text' name=''nsalC' placeholder='nombre de salida C'>
-                    <input type='text' name=''nsalD' placeholder='nombre de salida D'>
+                    <div class='in' id='B'>
+                        <input  type='text' name='nsalB' placeholder='nombre de salida B'>
+                        <span>Poner en:</span>
+                        <select name='estadoB' id='stateB'>
+                            <option value='ON'>ON</option>
+                            <option value='OFF'>OFF</option>
+                        </select>
+                        <span>SI</span>
+                        <select name='siB' id='IFB'>
+                            <option value='PGM'>PGM</option>
+                            <option value='IN1'>Entrada1</option>
+                            <option value='INT2'>Entrada2</option>
+                            <option value='INT3'>Entrada3</option>
+                            <option value='Never'>Nunca</option>
+                        </select>
+                        <span>Se encuentra en estado:</span>
+                        <select name='StateeINB' id='STinB'>
+                            <option value='High'>UP</option>
+                            <option value='LOW'>DOWN</option>
+                        </select>
+                    </div>
+                    <div class='in' id='A'>
+                        <input  type='text' name='nsalA' placeholder='nombre de salida A'>
+                        <span>Poner en:</span>
+                        <select name='estadoA' id='state'>
+                            <option value='ON'>ON</option>
+                            <option value='OFF'>OFF</option>
+                        </select>
+                        <span>SI</span>
+                        <select name='siA' id='IFA'>
+                            <option value='PGM'>PGM</option>
+                            <option value='IN1'>Entrada1</option>
+                            <option value='INT2'>Entrada2</option>
+                            <option value='INT3'>Entrada3</option>
+                            <option value='Never'>Nunca</option>
+                        </select>
+                        <span>Se encuentra en estado:</span>
+                        <select name='StateeIN' id='STin'>
+                            <option value='High'>UP</option>
+                            <option value='LOW'>DOWN</option>
+                        </select>
+                    </div>
+                    <input type='text' name='nsalD' placeholder='nombre de salida D'>
                 </form>
             </div>
         </div>
