@@ -154,7 +154,21 @@
             <div class='formulario'>
                 <div><h3>Salidas</h3></div>
                 <form action='/salidas' method='POST'>
+                    <div id="A">
                     <input type='text' name='nsalA' placeholder='nombre de salida A'>
+                    <span>Poner en:</span>
+                    <select name="estadoA" id="state">
+                        <option value="ON">ON</option>
+                        <option value="OFF">OFF</option>
+                    </select>
+                    <span>SI</span>
+                    <select name="siA" id="IFA">
+                        <option value="PGM">PGM</option>
+                        <option value="IN1">Entrada1</option>
+                        <option value="INT2">Entrada2</option>
+                        <option value="Never">Nunca</option>
+                    </select>
+                    </div>
                     <input type='text' name='nsalB' placeholder=' nombre de salida B'>
                     <input type="text" name="'nsalC" placeholder="nombre de salida C">
                     <input type="text" name="'nsalD" placeholder="nombre de salida D">
