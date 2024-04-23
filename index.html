@@ -181,6 +181,7 @@
                             <option value='High'>UP</option>
                             <option value='LOW'>DOWN</option>
                         </select>
+                        
                     </div>
                     <div class='in' id='B'>
                         <input  type='text' name='nsalB' placeholder='nombre de salida B'>
@@ -247,6 +248,23 @@
                     </div>
                 </form>
             </div>
+
+            <div class='formulario'>
+                <div><h3>Entradas</h3></div>
+            
+            <form id='frmT' action='/Entradas' method='POST'>
+                <label for='TA'>Entrada GSM</label>
+                <input id='TA' type='checkbox' name='TelA'>
+                <label for='TB'>ID del chat</label>
+                <input id='TB' type='checkbox' name='TelB'>
+                <button class='btn' type='submit'>Enviar</button>
+            </form>
+            <div>
+                <table><tr><td>Token actual:</td><td>dato</td></tr>
+                    <tr><td>ID del chat actual:</td><td>dato</td></tr>
+                </table>
+            </div>
+        </div>
         </div>
     </body>
 </html>
