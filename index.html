@@ -79,6 +79,10 @@
                 width: 50vw;
                 display: block;
                 margin: 10px auto;
+                border: none;
+            box-shadow: 0px 2px 2px rgba(96, 96, 97, 0.796);
+            border-radius: 10px;
+            padding: 10px;
             }
             @media only screen and (max-width: 600px){
             input, button {
@@ -93,6 +97,21 @@
             margin-left: 6vw;
             margin-right: 6vw;
             margin-bottom: 20px;
+        }
+        .bx{
+            display: flex; /* Utilizar flexbox para alinear los elementos en una línea */
+            align-items: center; /* Centrar verticalmente los elementos */
+
+        }
+        .bx input{
+            width: 50%;
+            
+        }
+        .bx input[type="checkbox"] {
+            box-shadow: none !important;
+        }
+        .bx span{
+            margin-left: 10px;
         }
             .table{
                 table-layout:auto;
@@ -161,31 +180,33 @@
             <div class='formulario'>
                 <div><h3>Entradas</h3></div>
                 <form id='frmT' action='/Entradas' method='POST'></form>
-                <table >
-                    <tr><td>Entrada:</td> <td>Notificar Telegram:</td></tr>
-                    <tr>
-                        <td><input type='text' name='N1' id='name1' placeholder='PGM'/></td>
-                        <td><input id='TA' type='checkbox' name='TelPGM' checked/></td>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='N1' id='name1' placeholder='Entrada1'/></td>
-                        <td><input id='TB' type='checkbox' name='Tel1' checked/></td>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='N1' id='name2' placeholder='Entrada2'/></td>
-                        <td><input id='TB' type='checkbox' name='Tel2' checked/></td>
-                    </tr>
-                    <tr>
-                        <td><input type='text' name='N1' id='name3' placeholder='Entrada3'/></td>
-                        <td><input id='TB' type='checkbox' name='Tel2' checked/></td>
-                    </tr>
-                    </table>
                 
-            
-            
-                
-                
-                <button class='btn' type='submit'>Enviar</button>
+                    <div class="bx"><span>Cambia los nombres y configura si deben reportar por Telegram</span></div>
+                    
+                        <div class="bx">
+                            <input type='text' name='N1' placeholder='PGM'/>
+                            <span> Reporte:</span>
+                            <input id='TA' type='checkbox' name='TelPGM' checked/>
+                        </div>
+
+                        <div class="bx">
+                            <input type='text' name='N1'  placeholder='Entrada1'/>
+                            <span> Reporte:</span>
+                            <input id='TB' type='checkbox' name='Tel1' checked/>
+                        </div>
+
+                        <div class="bx">
+                            <input type='text' name='N1'  placeholder='Entrada2'/>
+                            <span >Reporte:</span>
+                            <input id='TB' type='checkbox' name='Tel2' checked/>
+                        </div>
+                    
+                        <div class="bx">
+                            <input type='text' name='N1'  placeholder='Entrada3'/>
+                            <span> Reporte:</span>
+                            <input id='TC' type='checkbox' name='Tel3' checked/>
+                        </div>
+                    <button class='btn' type='submit'>Enviar</button>
             </form>
             
         </div>
