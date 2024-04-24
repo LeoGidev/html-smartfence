@@ -29,38 +29,28 @@
         </style>
     </head>
     <body> <h1>SmartFence</h1> <div id='sistema'> <div class='titulo'> <h2>Configuraciones de sistema</h2> </div> <div class='formulario'>
-                <div><h3>Conectar a wifi</h3></div> <form id='frm' action='/wifi' method='POST'>
-                    <label for='ssid'>SSID</label>
+                <div><h3>Conectar a wifi</h3></div> <form id='frm' action='/wifi' method='POST'> <label for='ssid'> SSID </label> 
                     <input id='ssid' type='text' name='ssid' placeholder='SSID'>
-                    <label for='pss'>Password</label>
-                    <input id='pss' type='text' name='password' placeholder='Contraseña'>
-                    <button class='btn' type='submit'>Enviar</button>
-                </form>
-                <div>
-                    <table><tr><td>SSID actual:</td><td>dato</td></tr>
-                        <tr><td>Pass actual:</td><td>dato</td></tr>
-                        <tr><td>Señal del wifi:</td><td>dato</td></tr>
-                    </table>
-                </div>
-            </div>
+                     <label for='pss'> Password </label> <input id='pss' type='text' name='password' placeholder='Contraseña'>
+                    <button class='btn' type='submit'>Enviar</button> </form> <div> <table><tr><td>SSID actual:</td><td>dato</td></tr>
+                        <tr><td>Pass actual:</td><td>
+                            dato
+                        </td></tr> <tr><td>Señal del wifi:</td><td>
+                            dato
+                        </td></tr> </table> </div> </div>
 
         
-            <div class='formulario'>
-                    <div><h3>Datos Telegram</h3></div>
+            <div class='formulario'> <div><h3>Datos Telegram</h3></div>
                 
                 <form id='frmT' action='/telegram' method='POST'>
-                    <label for='token'>TOKEN</label>
-                    <input id='token' type='text' name='token' placeholder='TOKEN'>
-                    <label for='idchat'>ID del chat</label>
-                    <input id='idchat' type='text' name='IDchat' placeholder='ID del chat'>
-                    <button class='btn' type='submit'>Enviar</button>
-                </form>
-                <div>
-                    <table><tr><td>Token actual:</td><td>dato</td></tr>
-                        <tr><td>ID del chat actual:</td><td>dato</td></tr>
-                    </table>
-                </div>
-            </div>
+                    <label for='token'>TOKEN</label> <input id='token' type='text' name='token' placeholder='TOKEN'>
+                    <label for='idchat'>ID del chat</label> <input id='idchat' type='text' name='IDchat' placeholder='ID del chat'>
+                    <button class='btn' type='submit'>Enviar</button> </form> <div>
+                    <table><tr><td>Token actual:</td><td>
+                        dato <!-- Voy por aquí-->
+                    </td></tr> <tr><td>ID del chat actual:</td><td>
+                        dato
+                    </td></tr> </table> </div> </div>
 
             <div class='formulario'>
                 <div><h3>Entradas</h3></div>
