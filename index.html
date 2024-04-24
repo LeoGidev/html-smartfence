@@ -5,135 +5,28 @@
         <title>SmartFence</title>
         <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
         <style>
-            body { 
-                overflow-x: hidden;
-                background-color: rgb(246, 246, 246); 
-            }
-            html { 
-                overflow-x: hidden; 
-            }
-            h1 { 
-                padding: 10px; 
-                background-color: #3b5998; 
-                color: white; 
-                font-size: 0.9rem;
-                position:fixed;
-                width: 100vw;
-                top:0;
-                left: 0;
-                margin: 0;
-            }
-            h2{
-                font-size: 1.1rem;
-            }
+            body { overflow-x: hidden; background-color: rgb(246, 246, 246); }
+            html { overflow-x: hidden; }
+            h1 { padding: 10px;background-color: #3b5998; color: white; font-size: 0.9rem; position:fixed; width: 100vw; top:0; left: 0; margin: 0; }
+            h2{font-size: 1.1rem; }
            
-            #sistema{
-               
-                padding-top: 8px;
-                margin-top: 10vh;
-                text-align: center;
-                
-                }
-
-            .titulo {
-                background-color: #3b5998;
-                color:white;
-                padding: 10px;
-                border-top-left-radius: 6px;
-                border-top-right-radius: 6px;
-                
-                margin: 0 auto; /* Centrar horizontalmente */
-                width: 84vw; /* Ajustar el ancho */
-            }
-            .formulario {
-                background-color: rgb(255, 255, 255);
-                box-shadow: 2px 2px 8px black;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                margin: 20px auto; /* Centrar horizontalmente y añadir espacio vertical */
-                width: 84vw; /* Ajustar el ancho */
-                padding-bottom: 20px;
-                border-radius: 4px;
-
-            }
-            form {
-                width: 84vw;
-                display: block;
-                text-align: center; 
-            }
-            button{
-                background-color: rgb(5, 89, 178);
-                color: white;
-                border-radius: 10px;
-                padding: 10px;
-                transition: 1s;
-                border: none;
-            }
-            button:hover{
-                cursor: pointer;
-                background-color: rgb(36, 73, 112);
-            }
-            input, button{
-                width: 50vw;
-                display: block;
-                margin: 10px auto;
-                border: none;
-            box-shadow: 0px 2px 2px rgba(96, 96, 97, 0.796);
-            border-radius: 10px;
-            padding: 10px;
-            }
-            @media only screen and (max-width: 600px){
-            input, button {
-                width: 60vw;
-                display: block;
-                margin: 10px auto; 
-            }
-        }
-        .in{
-            box-shadow: 0px 2px 4px rgb(71, 71, 71);
-            padding: 20px;
-            margin-left: 6vw;
-            margin-right: 6vw;
-            margin-bottom: 20px;
-        }
-        .bx{
-            display: flex; /* Utilizar flexbox para alinear los elementos en una línea */
-            align-items: center; /* Centrar verticalmente los elementos */
-
-        }
-        .bx input{
-            width: 50%;
-            
-        }
-        .bx input[type="checkbox"] {
-            box-shadow: none !important;
-        }
-        .bx span{
-            margin-left: 10px;
-        }
-            .table{
-                table-layout:auto;
-             }
-         td{
-            padding: 8px;
-            margin: 10px;
-            background-color: rgb(245, 246, 255);
-            border-radius: 3px;
-        }
+            #sistema{ padding-top: 8px; margin-top: 10vh; text-align: center; }
+            .titulo { background-color: #3b5998; color:white; padding: 10px; border-top-left-radius: 6px; border-top-right-radius: 6px; margin: 0 auto; /* Centrar horizontalmente */ width: 84vw; /* Ajustar el ancho */ }
+            .formulario { background-color: rgb(255, 255, 255); box-shadow: 2px 2px 8px black; display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 20px auto; /* Centrar horizontalmente y añadir espacio vertical */ width: 84vw; /* Ajustar el ancho */ padding-bottom: 20px; border-radius: 4px; }
+            form { width: 84vw; display: block; text-align: center; }
+            button{ background-color: rgb(5, 89, 178); color: white; border-radius: 10px; padding: 10px; transition: 1s; border: none; }
+            button:hover{ cursor: pointer; background-color: rgb(36, 73, 112); }
+            input, button{ width: 50vw; display: block; margin: 10px auto; border: none; box-shadow: 0px 2px 2px rgba(96, 96, 97, 0.796); border-radius: 10px; padding: 10px; }
+            @media only screen and (max-width: 600px){ input, button { width: 60vw; display: block; margin: 10px auto; } }
+        .in{ box-shadow: 0px 2px 4px rgb(71, 71, 71); padding: 20px; margin-left: 6vw; margin-right: 6vw; margin-bottom: 20px; }
+        .bx{ display: flex; /* Utilizar flexbox para alinear los elementos en una línea */ align-items: center; /* Centrar verticalmente los elementos */ }
+        .bx input{ width: 50%; }
+        .bx input[type='checkbox'] { box-shadow: none !important; }
+        .bx span{ margin-left: 10px; }
+            .table{ table-layout:auto; }
+         td{ padding: 8px; margin: 10px; background-color: rgb(245, 246, 255); border-radius: 3px; }
         /* Estilo para pantallas pequeñas (menos de 600px de ancho) */
-  @media only screen and (max-width: 600px) {
-    th, td {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      text-align: center;
-
-    }
-
-    
-  }
+  @media only screen and (max-width: 600px) { th, td { display: block; width: 100%; box-sizing: border-box; text-align: center; } }
         </style>
     </head>
     <body>
@@ -181,27 +74,27 @@
                 <div><h3>Entradas</h3></div>
                 <form id='frmT' action='/Entradas' method='POST'></form>
                 
-                    <div class="bx"><span>Cambia los nombres y configura si deben reportar por Telegram</span></div>
+                    <div class='bx'><span>Cambia los nombres y configura si deben reportar por Telegram</span></div>
                     
-                        <div class="bx">
+                        <div class='bx'>
                             <input type='text' name='N1' placeholder='PGM'/>
                             <span> Reporte:</span>
                             <input type='checkbox' name='TelPGM' checked/>
                         </div>
 
-                        <div class="bx">
+                        <div class='bx'>
                             <input type='text' name='N1'  placeholder='Entrada1'/>
                             <span> Reporte:</span>
                             <input ' type='checkbox' name='Tel1' checked/>
                         </div>
 
-                        <div class="bx">
+                        <div class='bx'>
                             <input type='text' name='N1'  placeholder='Entrada2'/>
                             <span >Reporte:</span>
                             <input type='checkbox' name='Tel2' checked/>
                         </div>
                     
-                        <div class="bx">
+                        <div class='bx'>
                             <input type='text' name='N1'  placeholder='Entrada3'/>
                             <span> Reporte:</span>
                             <input type='checkbox' name='Tel3' checked/>
